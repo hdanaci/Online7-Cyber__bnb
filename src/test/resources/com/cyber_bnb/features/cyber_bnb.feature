@@ -65,6 +65,7 @@ Scenario Outline: verify user information: <email>
 		| uvalerio7o@google.com		| sharaipencot  |
 		| bczadla7p@uol.com.br		| humphreyalsop |
 		| ehegel7q@usatoday.com		| nefenyong     |
+		
 	
 
 
