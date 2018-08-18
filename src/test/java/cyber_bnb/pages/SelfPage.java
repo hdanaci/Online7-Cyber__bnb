@@ -25,13 +25,13 @@ public class SelfPage {
 	public WebElement Srole;
 
 	@FindBy(xpath = "(//*[@class='title is-6'])[3]")
-	public WebElement team;
+	public WebElement Steam;
 
 	@FindBy(xpath = "(//*[@class='title is-6'])[4]")
 	public WebElement batch;
 
 	@FindBy(xpath = "(//*[@class='title is-6'])[5]")
-	public WebElement campus;
+	public WebElement Scampus;
 	
 
 }

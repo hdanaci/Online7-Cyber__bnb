@@ -37,7 +37,7 @@ Scenario: Verify group members on team page
 		|Bennett Tomanek   |
 		|Mariann Dewi      |
 		
-@temp 
+		
 Scenario Outline: verify user information: <email> 
 	Given the user sign in using email "<username>" and password "<password>" 
 	When the user is on the my self page 
@@ -53,56 +53,21 @@ Scenario Outline: verify user information: <email>
 		
 		
 		
-		# use the test data given to you in the excel file
-		#@temp 
-		#Scenario Outline: verify user information: <email> 
-		#	Given the user logs in using "<email>" "<password>" 
-		#	When the user is on the my self page 
-		#	Then the user information should be displayed 
-		#		|<name>|<role>|<team>|<campus>|
-		#		
-		#	Examples: 
-		#		| email          | password | name              | role      | team             | campus          |
-		#		| tommy@usa.com  | freedom  | Thomas Jefferson  | important | team of the free | land of the free|
-		#		| tommy@usa.com  | freedom  | Thomas Jefferson  | important | team of the free | land of the free|
-		#		| tommy@usa.com  | freedom  | Thomas Jefferson  | important | team of the free | land of the free|
-		#		| tommy@usa.com  | freedom  | Thomas Jefferson  | important | team of the free | land of the free|
-		#		| tommy@usa.com  | freedom  | Thomas Jefferson  | important | team of the free | land of the free|
-		
-		
-		#Scenario: make a reservation 
-		#	Given the user is on the home page 
-		#	When the user click hunt 
-		#	And subtitle “hunt for spot” should be display 
-		#	Then the user select 8-17-2018 11.00-12.00am 
-		#	And the user choose stanford 
-		#	And confirm reservation (edited) 
-		#	
-		#	
-		#Scenario: verify first and last two hours 
-		#	Given the user is on the home page 
-		#	When the user click on berkeley room 
-		#	Then subtitle should be “berkeley” 
-		#	Then the first and last two hours should be displayed in the following : 
-		#		|7:00AM   |
-		#		|7:30AM   |
-		#		|9:30PM   |
-		#		|10:00PM  |
-		#		
-		#		
-		#Scenario Outline: Verify room names and under title names 
-		#	Given the user is on the home page 
-		#	When the user selects "<roomName>" 
-		#	Then room name should be "<roomName>" 
-		#	And the under title name should be "<underName>" 
-		#	
-		#	Examples: 
-		#		|underName        |roomName |
-		#		|mens et manus    |mit      |
-		#		|veritas          |harvard  |
-		#		|lux et veritas   |yale     |
-		#		|fiat lux         |berkeley |
-		#		
-		#		
-		#
-		
+@temp 
+Scenario Outline: verify user information: <email> 
+	Given  the user logs in using "<email>" and "<password>" 
+	When  the user is on the my self page 
+	Then  the user information should be assert excelfile 
+	
+	Examples: 
+		| email						| password      |
+		| gmcalister7n@google.nl	| arluenereolfo |
+		| uvalerio7o@google.com		| sharaipencot  |
+		| bczadla7p@uol.com.br		| humphreyalsop |
+		| ehegel7q@usatoday.com		| nefenyong     |
+	
+
+
+
+
+	

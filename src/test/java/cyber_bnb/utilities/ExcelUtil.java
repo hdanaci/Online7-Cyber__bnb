@@ -37,7 +37,9 @@ public class ExcelUtil {
 			throw new RuntimeException(e);
 		}
 	}
+	
 
+	
 	public String getCellData(int rowNum, int colNum) {
 		XSSFCell cell;
 		try {
@@ -63,6 +65,7 @@ public class ExcelUtil {
 		return data;
 
 	}
+	
 
 	public List<Map<String, String>> getDataList() {
 		// get all columns
