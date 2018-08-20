@@ -59,7 +59,7 @@ public class SmokeTestStepDefs {
 		BrowserUtils.waitFor(2);
 
 		home.searchButton.click();
-	}
+	} 
 
 	@Then("user clicks on book for {string} as the room")
 	public void user_clicks_on_book_for_as_the_room(String string) {

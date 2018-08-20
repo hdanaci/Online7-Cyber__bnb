@@ -10,11 +10,12 @@ import cucumber.api.junit.Cucumber;
 							"html:target/default-cucumber-reports",
 							"json:target/cucumber.json" },
 
-				 tags = "@smoke", 
+				 tags = "@sm", 
 				 features = { "src/test/resources/com/cyber_bnb/features" }, 
 				 glue = {"cyber_bnb/step_definitions" }, 
-				 monochrome = true,
-				 dryRun = false
+				 monochrome = true
+//				 ,dryRun = true
 				)
-public class SmokeTestRunner {
+public class SmokeTestRunner { 
+	
 }
